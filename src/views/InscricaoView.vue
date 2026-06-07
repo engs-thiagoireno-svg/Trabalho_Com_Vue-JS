@@ -19,6 +19,12 @@ function validar() {
   erros.nomeEquipe = ''
   erros.emailLider = ''
   let valido = true
+
+  if (form.nomeEquipe.trim().length < 3) {
+    erros.nomeEquipe = 'Informe um nome de equipe com pelo menos 3 letras.'
+    valido = false
+  }
+  
 }
 
 
