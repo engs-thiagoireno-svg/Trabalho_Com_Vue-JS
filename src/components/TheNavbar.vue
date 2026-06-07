@@ -18,3 +18,30 @@ function fecharMenu() {
   menuAberto.value = false
 }
 </script>
+
+<template>
+  <header class="navbar">
+    <div class="logo">CAMPO REAL<span> HACKATHON</span></div>
+
+    <button
+      class="hamburguer"
+      :class="{ aberto: menuAberto }"
+      @click="alternarMenu"
+      aria-label="Abrir menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav>
+      <ul class="nav-links" :class="{ aberto: menuAberto }">
+        <li v-for="link in links" :key="link.rota">
+          <router-link :to="link.rota" @click="fecharMenu">
+            {{ link.texto }}
+          </router-link>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</template>
