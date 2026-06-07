@@ -47,3 +47,9 @@ function fecharModal() {
   form.acessibilidade = false
 }
 </script>
+
+<template>
+    <main class="page-content">
+        <h1 class="page-title">Garanta sua vaga</h1>
+    </main>
+</template>
