@@ -44,11 +44,17 @@ const atividades = [
     <h1 class="page-title">Cronograma Oficial</h1>
 
     <section class="grid-cronograma">
-      <!-- Cabecalho fixo -->
       <div class="grid-header">Horário</div>
       <div class="grid-header">Atividade</div>
       <div class="grid-header">Local</div>
-      
+
+      <template v-for="(item, index) in atividades" :key="index">
+        <div class="grid-item time">{{ item.horario }}</div>
+        <div class="grid-item" :class="{ destaque: item.destaque }">
+          {{ item.atividade }}
+        </div>
+        <div class="grid-item">{{ item.local }}</div>
+      </template>
     </section>
   </main>
 </template>
