@@ -60,9 +60,8 @@ onUnmounted(() => {
       <p style="color: var(--azul-neon)">Data do evento: 11/07/2026</p>
 
       <div class="cta-wrapper">
-        <router-link to="/inscricao" class="btn-main">
-          INSCREVA-SE JÁ!
-        </router-link>
+        <router-link to="/inscricao" class="btn-main"> INSCREVA-SE JÁ! </router-link>
+      </div>
     </div>
   </main>
 </template>
