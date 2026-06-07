@@ -8,6 +8,11 @@ const form = reactive({
   acessibilidade: false,
 })
 
+const erros = reactive({
+  nomeEquipe: '',
+  emailLider: '',
+})
+
 
 
 
