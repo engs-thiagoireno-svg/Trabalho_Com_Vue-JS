@@ -33,6 +33,12 @@ function validar() {
   return valido
 }
 
+function enviar() {
+  if (validar()) {
+    mostrarModal.value = true
+  }
+}
+
 
 
 </script>
