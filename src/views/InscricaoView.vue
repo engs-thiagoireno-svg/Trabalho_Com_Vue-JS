@@ -13,6 +13,8 @@ const erros = reactive({
   emailLider: '',
 })
 
+const mostrarModal = ref(false)
+
 
 
 
