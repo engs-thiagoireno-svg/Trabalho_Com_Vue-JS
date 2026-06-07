@@ -39,6 +39,12 @@ function enviar() {
   }
 }
 
-
+function fecharModal() {
+  mostrarModal.value = false
+  form.nomeEquipe = ''
+  form.emailLider = ''
+  form.experiencia = 'iniciante'
+  form.acessibilidade = false
+}
 
 </script>
