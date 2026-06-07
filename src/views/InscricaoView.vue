@@ -30,6 +30,7 @@ function validar() {
     erros.emailLider = 'Informe um e-mail válido.'
     valido = false
   }
+  return valido
 }
 
 
