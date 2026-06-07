@@ -51,5 +51,19 @@ function fecharModal() {
 <template>
     <main class="page-content">
         <h1 class="page-title">Garanta sua vaga</h1>
+
+        <form class="inscricao-form" @submit.prevent="enviar">
+      <fieldset>
+        <legend>Dados da Equipe</legend>
+
+        <label for="nomeEquipe">Nome da Equipe:</label>
+        <input
+          type="text"
+          id="nomeEquipe"
+          v-model="form.nomeEquipe"
+          :class="{ 'input-erro': erros.nomeEquipe }"
+        />
+        </fieldset>
+        </form>
     </main>
 </template>
