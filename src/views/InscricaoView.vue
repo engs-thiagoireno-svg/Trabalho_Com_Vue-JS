@@ -63,6 +63,10 @@ function fecharModal() {
           v-model="form.nomeEquipe"
           :class="{ 'input-erro': erros.nomeEquipe }"
         />
+
+        <p v-if="erros.nomeEquipe" class="msg-erro">{{ erros.nomeEquipe }}</p> <!-- mensagem de erro do v if -->
+
+
         </fieldset>
         </form>
     </main>
