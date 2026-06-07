@@ -66,6 +66,13 @@ function fecharModal() {
 
         <p v-if="erros.nomeEquipe" class="msg-erro">{{ erros.nomeEquipe }}</p> <!-- mensagem de erro do v if -->
 
+        <label for="emailLider">E-mail do Líder:</label>
+        <input
+          type="Email"
+          id="EmailLider"
+          v-model="form.emailLider"
+          :class="{ 'input-erro': erros.emailLider }"
+        />
 
         </fieldset>
         </form>
