@@ -10,6 +10,11 @@ const links = [
   { texto: 'Inscrição', rota: '/inscricao' },
 ]
 
+function alternarMenu() {
+  menuAberto.value = !menuAberto.value
+}
 
-
+function fecharMenu() {
+  menuAberto.value = false
+}
 </script>
