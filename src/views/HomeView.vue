@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const dataEvento = new Date('2026-03-31T09:00:00')
 const dias = ref(0)
@@ -23,7 +23,7 @@ function atualizarContagem() {
   horas.value = Math.floor((diferenca / (1000 * 60 * 60)) % 24)
   minutos.value = Math.floor((diferenca / (1000 * 60)) % 60)
 }
- 
+
 onMounted(() => {
   atualizarContagem()
   intervalo = setInterval(atualizarContagem, 1000 * 30)
@@ -33,3 +33,30 @@ onUnmounted(() => {
   clearInterval(intervalo)
 })
 </script>
+
+<template>
+  <main class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>HACKATHON</h1>
+      <p>A Revolução Tecnológica</p>
+
+      <div class="countdown-container">
+        <div class="time-box">
+          <span>{{ dias }}</span>
+          <p>DIAS</p>
+        </div>
+        <div class="time-box">
+          <span>{{ horas }}</span>
+          <p>HORAS</p>
+        </div>
+        <div class="time-box">
+          <span>{{ minutos }}</span>
+          <p>MINUTOS</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</template>
