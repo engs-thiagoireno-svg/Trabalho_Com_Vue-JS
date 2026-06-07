@@ -68,8 +68,8 @@ function fecharModal() {
 
         <label for="emailLider">E-mail do Líder:</label>
         <input
-          type="Email"
-          id="EmailLider"
+          type="email"
+          id="emailLider"
           v-model="form.emailLider"
           :class="{ 'input-erro': erros.emailLider }"
         />
