@@ -38,3 +38,17 @@ const atividades = [
   },
 ]
 </script>
+
+<template>
+  <main class="page-content">
+    <h1 class="page-title">Cronograma Oficial</h1>
+
+    <section class="grid-cronograma">
+      <!-- Cabecalho fixo -->
+      <div class="grid-header">Horário</div>
+      <div class="grid-header">Atividade</div>
+      <div class="grid-header">Local</div>
+      
+    </section>
+  </main>
+</template>
