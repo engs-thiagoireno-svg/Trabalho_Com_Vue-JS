@@ -24,7 +24,12 @@ function validar() {
     erros.nomeEquipe = 'Informe um nome de equipe com pelo menos 3 letras.'
     valido = false
   }
-  
+
+  const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!regexEmail.test(form.emailLider)) {
+    erros.emailLider = 'Informe um e-mail válido.'
+    valido = false
+  }
 }
 
 
