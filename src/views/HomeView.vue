@@ -23,5 +23,13 @@ function atualizarContagem() {
   horas.value = Math.floor((diferenca / (1000 * 60 * 60)) % 24)
   minutos.value = Math.floor((diferenca / (1000 * 60)) % 60)
 }
+ 
+onMounted(() => {
+  atualizarContagem()
+  intervalo = setInterval(atualizarContagem, 1000 * 30)
+})
 
+onUnmounted(() => {
+  clearInterval(intervalo)
+})
 </script>
