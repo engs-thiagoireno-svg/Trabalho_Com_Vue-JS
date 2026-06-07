@@ -46,5 +46,4 @@ function fecharModal() {
   form.experiencia = 'iniciante'
   form.acessibilidade = false
 }
-
 </script>
