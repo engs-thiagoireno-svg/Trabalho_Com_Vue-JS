@@ -15,6 +15,11 @@ const erros = reactive({
 
 const mostrarModal = ref(false)
 
+function validar() {
+  erros.nomeEquipe = ''
+  erros.emailLider = ''
+  let valido = true
+}
 
 
 
