@@ -30,6 +30,11 @@ const atividades = [
     local: 'Laboratório específico',
     destaque: false,
   },
-  
+  {
+    horario: '18:00 - 19:00',
+    atividade: 'Apresentação dos projetos',
+    local: 'Auditório',
+    destaque: true,
+  },
 ]
 </script>
