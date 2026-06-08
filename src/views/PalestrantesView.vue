@@ -33,5 +33,14 @@ const palestrantes = [
 <template>
     <main class="page-content">
         <h1 class="page-title">mentores e Palestrantes</h1>
+        
+        <div class="busca-wrapper">
+        <input
+            type="text"
+            v-model="busca"
+            placeholder="Buscar por nome ou especialidade..."
+            />
+        </div>
+
     </main>
 </template>
