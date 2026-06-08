@@ -93,7 +93,10 @@ function fecharModal() {
           id="acessibilidade"
           v-model="form.acessibilidade"
         />
-        </div>
+        <label for="acessibilidade">
+          Nossa equipe possui necessidades de acessibilidade.
+        </label>
+      </div>
 
         
         </form>
