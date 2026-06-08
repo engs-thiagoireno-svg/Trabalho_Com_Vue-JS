@@ -82,11 +82,12 @@ function fecharModal() {
         <label for="experiencia">Qual a experiência média do grupo?</label>
         <select id="experiencia" v-model="form.experiencia">
           <option value="iniciante">Iniciante (1º a 3º semestre)</option>
-          
+          <option value="intermediario">Intermediário (4º a 6º semestre)</option>
+          <option value="avancado">Avançado (7º semestre em diante)</option>
         </select>
       </fieldset>
 
-        </fieldset>
+        
         </form>
     </main>
 </template>
