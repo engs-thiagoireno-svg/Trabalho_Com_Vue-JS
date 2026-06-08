@@ -97,7 +97,9 @@ function fecharModal() {
           Nossa equipe possui necessidades de acessibilidade.
         </label>
       </div>
-
+      
+      <button type="submit" class="submit-btn">Confirmar Inscrição</button>
+    
         
         </form>
     </main>
