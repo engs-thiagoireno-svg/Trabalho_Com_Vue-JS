@@ -18,4 +18,14 @@ const palestrantes = [
 
     const busca = ref('')
 
+    const filtrados = computed(() => {
+  const termo = busca.value.trim().toLowerCase()
+  if (!termo) return palestrantes
+  return palestrantes.filter(
+    (p) =>
+      p.nome.toLowerCase().includes(termo) ||
+      p.especialidade.toLowerCase().includes(termo)
+  )
+})
+
 </script>
