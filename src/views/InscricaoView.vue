@@ -100,7 +100,16 @@ function fecharModal() {
       
       <button type="submit" class="submit-btn">Confirmar Inscrição</button>
     
-        
+    <div v-if="mostrarModal" class="modal-overlay" @click.self="fecharModal">
+      <div class="modal-box">
+        <h2>Inscrição Confirmada!</h2>
+        <p>
+          Equipe <strong>{{ form.nomeEquipe }}</strong> inscrita com sucesso.
+          Boa sorte no Hackathon!
+        </p>
+        <button class="btn-main" @click="fecharModal">Fechar</button>
+      </div>
+     </div>   
         </form>
     </main>
 </template>
