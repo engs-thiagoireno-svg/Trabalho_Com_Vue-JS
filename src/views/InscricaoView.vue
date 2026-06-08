@@ -74,6 +74,18 @@ function fecharModal() {
           :class="{ 'input-erro': erros.emailLider }"
         />
 
+        <p v-if="erros.emailLider" class="msg-erro">{{ erros.emailLider }}</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Nível Técnico</legend>
+        <label for="experiencia">Qual a experiência média do grupo?</label>
+        <select id="experiencia" v-model="form.experiencia">
+          <option value="iniciante">Iniciante (1º a 3º semestre)</option>
+          
+        </select>
+      </fieldset>
+
         </fieldset>
         </form>
     </main>
