@@ -57,5 +57,7 @@ const palestrantes = [
       </div>
     </section>
 
+    <p v-else class="sem-resultado">Nenhum palestrante encontrado.</p>
+
     </main>
 </template>
