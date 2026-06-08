@@ -42,5 +42,20 @@ const palestrantes = [
             />
         </div>
 
+        <section class="cards-container" v-if="filtrados.length > 0">
+      <div class="flip-card" v-for="(p, index) in filtrados" :key="index">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img :src="p.foto" :alt="p.nome" />
+            <h3>{{ p.nome }}</h3>
+          </div>
+          <div class="flip-card-back">
+            <h3>{{ p.especialidade }}</h3>
+            <p>{{ p.descricao }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     </main>
 </template>
