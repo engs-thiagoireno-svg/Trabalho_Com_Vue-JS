@@ -8,6 +8,12 @@ const palestrantes = [
     especialidade: 'Especialista em Web',
     descricao:
       'Vai te ajudar a estruturar a lógica e o Front-End do seu projeto.',
-    }]
+    },
+    {
+    nome: 'card 2',
+    foto: '',
+    especialidade: 'Especialista em Sinuca',
+    descricao: 'Foco total quando o assunto é técnica e precisão na bola 8.',
+    },]
 
 </script>
