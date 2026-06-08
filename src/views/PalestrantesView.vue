@@ -12,8 +12,10 @@ const palestrantes = [
     {
     nome: 'card 2',
     foto: '',
-    especialidade: 'Especialista em Sinuca',
-    descricao: 'Foco total quando o assunto é técnica e precisão na bola 8.',
+    especialidade: '',
+    descricao: '',
     },]
+
+    const busca = ref('')
 
 </script>
