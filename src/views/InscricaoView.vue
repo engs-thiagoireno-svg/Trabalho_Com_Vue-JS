@@ -87,6 +87,14 @@ function fecharModal() {
         </select>
       </fieldset>
 
+      <div class="checkbox-group">
+        <input
+          type="checkbox"
+          id="acessibilidade"
+          v-model="form.acessibilidade"
+        />
+        </div>
+
         
         </form>
     </main>
