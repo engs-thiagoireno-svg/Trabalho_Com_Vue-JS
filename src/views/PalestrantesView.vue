@@ -29,3 +29,9 @@ const palestrantes = [
 })
 
 </script>
+
+<template>
+    <main class="page-content">
+        <h1 class="page-title">mentores e Palestrantes</h1>
+    </main>
+</template>
