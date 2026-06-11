@@ -49,10 +49,10 @@ function fecharModal() {
 </script>
 
 <template>
-    <main class="page-content">
-        <h1 class="page-title">Garanta sua vaga</h1>
+  <main class="page-content">
+    <h1 class="page-title">Garanta sua vaga</h1>
 
-        <form class="inscricao-form" @submit.prevent="enviar">
+    <form class="inscricao-form" @submit.prevent="enviar">
       <fieldset>
         <legend>Dados da Equipe</legend>
 
@@ -64,7 +64,7 @@ function fecharModal() {
           :class="{ 'input-erro': erros.nomeEquipe }"
         />
 
-        <p v-if="erros.nomeEquipe" class="msg-erro">{{ erros.nomeEquipe }}</p> 
+        <p v-if="erros.nomeEquipe" class="msg-erro">{{ erros.nomeEquipe }}</p>
 
         <label for="emailLider">E-mail do Líder:</label>
         <input
@@ -88,28 +88,22 @@ function fecharModal() {
       </fieldset>
 
       <div class="checkbox-group">
-        <input
-          type="checkbox"
-          id="acessibilidade"
-          v-model="form.acessibilidade"
-        />
-        <label for="acessibilidade">
-          Nossa equipe possui necessidades de acessibilidade.
-        </label>
+        <input type="checkbox" id="acessibilidade" v-model="form.acessibilidade" />
+        <label for="acessibilidade"> Nossa equipe possui necessidades de acessibilidade. </label>
       </div>
-      
+
       <button type="submit" class="submit-btn">Confirmar Inscrição</button>
-    
-    <div v-if="mostrarModal" class="modal-overlay" @click.self="fecharModal">
-      <div class="modal-box">
-        <h2>Inscrição Confirmada!</h2>
-        <p>
-          Equipe <strong>{{ form.nomeEquipe }}</strong> inscrita com sucesso.
-          Boa sorte no Hackathon!
-        </p>
-        <button class="btn-main" @click="fecharModal">Fechar</button>
+
+      <div v-if="mostrarModal" class="modal-overlay" @click.self="fecharModal">
+        <div class="modal-box">
+          <h2>Inscrição Confirmada!</h2>
+          <p>
+            Equipe <strong>{{ form.nomeEquipe }}</strong> inscrita com sucesso. Boa sorte no
+            Hackathon!
+          </p>
+          <button class="btn-main" @click="fecharModal">Fechar</button>
+        </div>
       </div>
-     </div>   
-        </form>
-    </main>
+    </form>
+  </main>
 </template>

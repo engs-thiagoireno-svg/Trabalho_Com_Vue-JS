@@ -158,7 +158,9 @@ body {
     text-shadow: 0 0 10px var(--azul-neon);
   }
   to {
-    text-shadow: 0 0 25px var(--azul-neon), 0 0 10px var(--verde-neon);
+    text-shadow:
+      0 0 25px var(--azul-neon),
+      0 0 10px var(--verde-neon);
   }
 }
 
@@ -213,7 +215,10 @@ body {
   text-align: center;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
 }
 
 .btn-main:hover {
@@ -275,7 +280,9 @@ body {
   border-radius: 4px;
   display: flex;
   align-items: center;
-  transition: transform 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
 }
 
 .grid-item:hover {
