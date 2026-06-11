@@ -10,3 +10,6 @@ const routes = [
   { path: '/palestrantes', name: 'palestrantes', component: PalestrantesView },
   { path: '/inscricao', name: 'inscricao', component: InscricaoView },
 ]
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
