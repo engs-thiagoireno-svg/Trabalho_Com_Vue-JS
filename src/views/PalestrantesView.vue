@@ -10,10 +10,10 @@ const palestrantes = [
       'Vai te ajudar a estruturar a lógica e o Front-End do seu projeto.',
     },
     {
-    nome: 'card 2',
-    foto: '',
-    especialidade: '',
-    descricao: '',
+    nome: 'Teletubbies',
+    foto: 'https://static.wixstatic.com/media/449abe_0e5d916784184d3784f6e5828ef6d351~mv2.jpg/v1/fill/w_864,h_864,al_c,q_85,enc_avif,quality_auto/Character-Laa-Laa.jpg',
+    especialidade: 'Animar teu dia',
+    descricao: 'Ela é alegre, brincalhona e cheia de energia. Tem o corpo todo amarelo e sua antena no topo da cabeça tem o formato de um espiral (uma espécie de cacho ondulado), que é a marca que a diferencia das outras.',
     },]
 
     const busca = ref('')
