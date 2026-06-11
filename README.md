@@ -26,3 +26,28 @@ aplicação baseada em componentes.
 - `v-model` — campos do formulário e barra de busca
 - `:class` (v-bind) — destaque de itens e estado de erro/menu aberto
 - `@click` / `@submit.prevent` — interações e envio do formulário
+
+## Como executar
+
+Pré-requisito: [Node.js](https://nodejs.org) versão 20.19 ou superior.
+
+```bash
+# 1. Instalar as dependências
+npm install
+
+# 2. Rodar em modo de desenvolvimento
+npm run dev
+
+# 3. Abrir no navegador o endereço mostrado no terminal (ex.: http://localhost:5173)
+```
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Integrantes do grupo
+
+- (Bruno Gabriel Roth, Thiago Ireno, Luis Antonio Komar )
