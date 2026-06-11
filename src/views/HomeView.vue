@@ -13,9 +13,9 @@ function atualizarContagem() {
   const diferenca = dataEvento - agora
 
   if (diferenca <= 0) {
-    dias.value = 0
-    horas.value = 0
-    minutos.value = 0
+    dias.value = 4
+    horas.value = 2
+    minutos.value = 24
     return
   }
 
