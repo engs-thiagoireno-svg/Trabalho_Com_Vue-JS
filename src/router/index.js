@@ -1,0 +1,5 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import CronogramaView from '../views/CronogramaView.vue'
+import PalestrantesView from '../views/PalestrantesView.vue'
+import InscricaoView from '../views/InscricaoView.vue'
